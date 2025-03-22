@@ -9,9 +9,7 @@ public class Coin : MonoBehaviour
 
     [SerializeField] private ParticleSystem _collisionEffect;
 
-
     [SerializeField] private SphereGameRullers _sphereGameRullers;
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,12 +18,6 @@ public class Coin : MonoBehaviour
         if (sphereController == null)
         {
             Debug.LogWarning("SphereController отсутствует");
-            return;
-        }
-
-        if (_collisionEffect == null)
-        {
-            Debug.LogError("Collision отсутствует");
             return;
         }
 
@@ -44,6 +36,4 @@ public class Coin : MonoBehaviour
         _collisionEffect.transform.position = transform.position;
         _collisionEffect.Play();
     }
-
-
 }

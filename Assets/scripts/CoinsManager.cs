@@ -7,7 +7,7 @@ public class CoinsManager : MonoBehaviour
 {
     [SerializeField] private GameObject _coinContainer;
 
-    private List<Vector3> _coinsPositionList = new List<Vector3>();
+    private readonly List<Vector3> _coinsPositionList = new List<Vector3>();
 
     private void Start()
     {

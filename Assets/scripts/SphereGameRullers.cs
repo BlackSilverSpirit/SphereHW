@@ -20,8 +20,7 @@ public class SphereGameRullers : MonoBehaviour
 
     [SerializeField] private Vector3 _sphereStartPosition;
 
-    private float _resetTimeLoseGame;
-
+    private float _resetDefaultTimeLoseGame;
 
     private string _loseGameMessage = "Game Over";
     private string _winGameMessage = "You win";
@@ -30,14 +29,12 @@ public class SphereGameRullers : MonoBehaviour
 
     private bool _isPlayGame;
 
-
     private void Awake()
     {
-        _resetTimeLoseGame = _timeLoseGame;
+        _resetDefaultTimeLoseGame = _timeLoseGame;
+
         StartGame();
     }
-
-
 
     private void Update()
     {
@@ -69,11 +66,12 @@ public class SphereGameRullers : MonoBehaviour
 
     private void WinGame()
     {
-        Debug.Log("You Win");
+        Debug.Log(_winGameMessage);
 
         _FinishGameMessageText.gameObject.SetActive(true);
         _FinishGameMessageText.color = Color.green;
         _FinishGameMessageText.text = _winGameMessage;
+
         _isPlayGame = false;
     }
 
@@ -81,19 +79,19 @@ public class SphereGameRullers : MonoBehaviour
     {
         _timeLoseGame -= Time.deltaTime;
         _timeText.text = _timeLoseGame.ToString("0.00");
+
         if (_timeLoseGame <= 0)
         {
+            Debug.Log(_loseGameMessage);
             _timeLoseGame = 0;
 
             _FinishGameMessageText.gameObject.SetActive(true);
-
             _FinishGameMessageText.color = Color.red;
-
             _FinishGameMessageText.text = _loseGameMessage;
+
             _isPlayGame = false;
         }
     }
-
 
     public void AddCoins(int value)
     {
@@ -112,7 +110,7 @@ public class SphereGameRullers : MonoBehaviour
 
         _coins = 0;
 
-        _timeLoseGame = _resetTimeLoseGame;
+        _timeLoseGame = _resetDefaultTimeLoseGame;
 
         _FinishGameMessageText.gameObject.SetActive(false);
 
