@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.WSA;
 
-public class SphereController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-
     private Rigidbody _rigidbody;
 
     [SerializeField] private float _moveSpeed = 10f;
@@ -36,13 +35,14 @@ public class SphereController : MonoBehaviour
         ProcessMovement();
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void ProcessMovement()
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            _isGrounded = true;
-            //Debug.Log("Ground contact");
-        }
+        float moveHorizontal = Input.GetAxis(_horizontalAxisName);
+        float moveVertical = Input.GetAxis(_verticalAxisName);
+
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+        _rigidbody.AddForce(movement * _moveSpeed);
     }
 
     void Jump()
@@ -56,22 +56,20 @@ public class SphereController : MonoBehaviour
         return Input.GetKeyDown(JumpKey) && _isGrounded;
     }
 
-    private void ProcessMovement()
-    {
-        float moveHorizontal = Input.GetAxis(_horizontalAxisName);
-        float moveVertical = Input.GetAxis(_verticalAxisName);
-
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-
-        _rigidbody.AddForce(movement * _moveSpeed);
-    }
-
     private void GetRigidbodyOnAwake()
     {
         _rigidbody = GetComponent<Rigidbody>();
         if (_rigidbody == null)
         {
             Debug.LogError("Rigidbody нету.");
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            _isGrounded = true;
         }
     }
 

@@ -7,33 +7,30 @@ public class Coin : MonoBehaviour
     [SerializeField] private int _minValue;
     [SerializeField] private int _maxValue;
 
-    [SerializeField] private ParticleSystem _collisionEffect;
+    [SerializeField] private ParticleSystem _collectEffect;
 
-    [SerializeField] private SphereGameRullers _sphereGameRullers;
+    private int _value;
+    public int Value => _value;
 
-    private void OnTriggerEnter(Collider other)
+    private void Awake()
     {
-        SphereController sphereController = other.GetComponent<SphereController>();
-
-        if (sphereController == null)
-        {
-            Debug.LogWarning("SphereController отсутствует");
-            return;
-        }
-
-        if (sphereController != null)
-        {
-            ParticleCollisionEffectActive();
-
-            _sphereGameRullers.AddCoins(Random.Range(_minValue, _maxValue + 1));
-
-            gameObject.SetActive(false);
-        }
+        GenerateValue();
     }
 
-    private void ParticleCollisionEffectActive()
+    public void Collect()
     {
-        _collisionEffect.transform.position = transform.position;
-        _collisionEffect.Play();
+        PlayCollectEffect();
+        gameObject.SetActive(false);
+    }
+
+    private void GenerateValue()
+    {
+        _value = Random.Range(_minValue, _maxValue + 1);
+    }
+
+    private void PlayCollectEffect()
+    {
+        _collectEffect.transform.position = transform.position;
+        _collectEffect.Play();
     }
 }

@@ -301,8 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &115791459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,6 +430,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 1488685890}
   _offset: {x: 0, y: 3.25, z: -7}
+  _rotationSpeed: 5
+  _minVerticalAngle: -80
+  _maxVerticalAngle: 80
 --- !u!4 &180974424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4003804723947526, guid: fc6f3424666dfda45bcbadbbf42e5968, type: 3}
@@ -460,8 +462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &197938288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,8 +650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &250956273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,8 +910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &267691626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1290,8 +1289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &371756170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,8 +1330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &379969570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1460,8 +1457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 5
   _maxValue: 10
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &387994398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,8 +1531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &415220073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1693,8 +1688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &431959062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2656,8 +2650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &693846878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2931,8 +2924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &740807747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3087,8 +3079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &861998689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3313,8 +3304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &995094070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4658,8 +4648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &1460764162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4765,8 +4754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &1498589038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4972,8 +4960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &1566043123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5126,8 +5113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &1654197695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5239,8 +5225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &1669116999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5389,6 +5374,8 @@ GameObject:
   - component: {fileID: 1708610335}
   - component: {fileID: 1708610336}
   - component: {fileID: 1708610337}
+  - component: {fileID: 1708610338}
+  - component: {fileID: 1708610339}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -5474,6 +5461,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 10
   _jumpForce: 5
+--- !u!114 &1708610338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708610332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35b60d38797f6145a026b79437e0e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wallet: {fileID: 1708610339}
+--- !u!114 &1708610339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708610332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d685e16a584ca4fbd426a7a179c82b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1745751774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5874,8 +5886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 5
   _maxValue: 10
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!4 &1826418687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4914818815454766, guid: 160a6121b4d25254da31bdab63ad82b7, type: 3}
@@ -5921,8 +5932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 1
-  _collisionEffect: {fileID: 894830401}
-  _sphereGameRullers: {fileID: 1935179790}
+  _collectEffect: {fileID: 894830401}
 --- !u!114 &1830695087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6333,11 +6343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4914818815454766, guid: 160a6121b4d25254da31bdab63ad82b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.48
+      value: 29.08
       objectReference: {fileID: 0}
     - target: {fileID: 4914818815454766, guid: 160a6121b4d25254da31bdab63ad82b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.64
+      value: -0.57
       objectReference: {fileID: 0}
     - target: {fileID: 4914818815454766, guid: 160a6121b4d25254da31bdab63ad82b7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6435,14 +6445,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8e586ecc7b39c4b82e271b1017888b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sphereController: {fileID: 1708610337}
+  _playerController: {fileID: 1708610337}
   _coinsManager: {fileID: 1935179791}
-  _timeLoseGame: 30
-  _winCoins: 10
+  _wallet: {fileID: 1708610339}
+  _remainingTime: 30
+  _requiredCoinsForWin: 10
   _timeText: {fileID: 1751177937}
-  _FinishGameMessageText: {fileID: 265445148}
+  _finishGameMessageText: {fileID: 265445148}
   _CoinsCountText: {fileID: 692701385}
-  _sphereStartPosition: {x: 0, y: 0, z: 0}
+  _heroStartPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1935179791
 MonoBehaviour:
   m_ObjectHideFlags: 0
